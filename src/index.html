@@ -8,20 +8,34 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
-    <title>Navbar flexbox</title>
+    <title>Navbar responsive</title>
 </head>
 <body>
     <div class="hero">
         <nav>
-            <h2 class="logo">John <span>Doe</span></h2>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Service</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact us</a></li>
+            <div id="menu-toggle" class="menu-toggle">
+                <label for="toggle-menu">
+                    <img src="../img/Hamburger_icon.png" alt="">
+                </label>
+            </div>
+            <input type="checkbox" class="toggle_menu" id="toggle-menu">
+            <ul class="menu">
+                <li class="item">
+                    <a href="#" class="link">
+                        <h2 class="logo">John <span>Doe</span></h2>
+                    </a>
+                </li>
+                <li class="item"><a href="#" class="link">Home</a></li>
+                <li class="item"><a href="#" class="link">About</a></li>
+                <li class="item"><a href="#" class="link">Service</a></li>
+                <li class="item"><a href="#" class="link">Portfolio</a></li>
+                <li class="item"><a href="#" class="link">Contact us</a></li>
+                <li class="item">
+                    <a href="#" class="link">
+                        <button type="button">Subscribe</button>
+                    </a>
+                </li>
             </ul>
-            <button type="button">Subscribe</button>
         </nav>
 
     </div>
